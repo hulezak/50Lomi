@@ -31,8 +31,26 @@
 
 
  <div  class="homediv" >
-  <img class="homeimg" src="home2.webp" alt="">
+  <div class="mySlides">
+    <img class="homeimg" src="home2.webp" alt="">
+  </div>
+  <div class="mySlides">
+    <img class="homeimg" src="home4.jpg" alt="">
+  </div>
+  <div class="mySlides">
+    <img class="homeimg" src="home.jpg" alt="">
+  </div>
+  <div class="mySlides">
+    <img class="homeimg" src="home3.jpg" alt="">
+  </div>
+ 
  </div>
+ <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
 
 
 <hr>
@@ -42,18 +60,45 @@
   <p> <b>50 Lomi</b> is non-profit organization set up by some  high school volunter students in benishanguel, Ethiopia offering grade 7 and grade 8 kids 
     programing course to be in control of their future.</p>
 </div>
+
+
 <div class="donates">
       <p>Donate today and help us unlock the potential within every young mind.</p>
       <button id="donate">Donate us </button>
 </div>
 
+<!-- the image here are judst to try-->
+
+
 </main>
 
 
-  
-  
-</div>
 
+
+<script>
+  let slideIndex = 0;
+  
+  showSlides();
+  
+  function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active1", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active1";
+     // Change image every 2 seconds
+  }
+
+  setInterval(showSlides,2000)
+  </script>
 
 
 </body>

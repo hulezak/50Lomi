@@ -1,0 +1,119 @@
+@media (max-width:774px){
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .icon{
+    display: display;
+  }
+  }
+
+
+  
+
+
+  .icon{
+    display: none;
+  }
+body{
+    margin: 0px;
+    background-color: white;
+  } 
+h1,h2,h3{
+  color:black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+  .topnav{
+    width:100%;
+    height:60px;
+    background-color: green;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .topnav a{
+    width:30px;
+    height:40px;
+    font-size: 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+
+  }
+
+
+  .Newcoming{
+    margin-top: 0px;
+    margin-right: auto;
+   
+    background-color: aqua;
+    margin-left: auto;
+      
+    width:80%;
+   
+   
+    height:500px;
+
+
+  }
+  .Newcoming1{
+    margin-right: auto;
+    object-fit: fit;
+    
+    width:100%;
+    margin-left: auto;
+    height:500px;
+   
+   
+  
+
+  }
+
+
+
+
+ .mainbook {
+       
+        margin: 20px;
+        background-color: aqua;
+        display: flex;
+        flex-wrap:wrap;
+      justify-content: space-between;
+ }
+
+ .bookslist{   
+
+    width:190px;
+    height:200px;
+    margin-right:20px;
+    margin-bottom: 30px;
+   
+
+ }
+ .d{
+    object-fit: fit;
+    width:30px;
+    height:20px;
+    z-index: 20;
+ }
+
+ 
+ img {
+  width: 170px;
+  height: 200px;
+  object-fit: cover;
+  z-index: -2;
+
+}
+
+
+
+
+#clock{
+  background-color: blue;
+}
